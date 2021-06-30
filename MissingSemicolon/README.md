@@ -9,4 +9,6 @@ Collaboration with:
 4. Sa'ed Jabali.
 
 # Method
-readingFile for input file and output the file after possing.
+readingFile for input file and output the file after processing.
+
+root [File]('./app/src/main/java/MissingSemicolon/App.java')
