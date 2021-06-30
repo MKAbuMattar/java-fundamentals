@@ -11,4 +11,4 @@ Collaboration with:
 # Method
 readingFile for input file and output the file after processing.
 
-root [File]('./app/src/main/java/MissingSemicolon/App.java')
+root [App.js](/app/src/main/java/MissingSemicolon/App.java)
