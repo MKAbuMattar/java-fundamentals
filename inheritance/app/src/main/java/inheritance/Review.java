@@ -9,6 +9,12 @@ public class Review implements ReviewInterface{
 
   private static final LinkedList review = new LinkedList();
 
+  /**
+   *
+   * @param body
+   * @param author
+   * @param stars
+   */
   @Override
   public void addReview(String body, String author, int stars) {
     this.body = body;
@@ -17,14 +23,26 @@ public class Review implements ReviewInterface{
     review.add(body, author, stars);
   }
 
+  /**
+   *
+   * @return
+   */
   public LinkedList getReview() {
     return  review;
   }
 
+  /**
+   *
+   * @return
+   */
   public double getReviewStars() {
     return review.avgStars();
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public String toString() {
     return getReview().toString();

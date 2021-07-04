@@ -3,12 +3,12 @@
  */
 
 import inheritance.Restaurant;
-import inheritance.Review;
 
 public class App {
     public static void main(String[] args) {
 
         Restaurant McDonaldson = new Restaurant("McDonaldson");
+
         McDonaldson.setCategory("Big Mac",5.3);
         McDonaldson.setCategory("Chicken McNuggets",2.3);
         McDonaldson.setCategory("World Famous Fries",.99);
@@ -17,6 +17,6 @@ public class App {
         McDonaldson.addReview("trash","Ali",3);
         McDonaldson.addReview("trash","mohammad",4);
 
-        System.out.println(McDonaldson);
+        System.out.println(McDonaldson.getStars());
     }
 }

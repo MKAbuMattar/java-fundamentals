@@ -5,6 +5,11 @@ import category.data.Node;
 public class LinkedList {
   private Node head;
 
+  /**
+   *
+   * @param data
+   * @param value
+   */
   public void add(String data, double value){
     Node node = new Node (data, value);
     if(head == null) {
@@ -18,6 +23,10 @@ public class LinkedList {
     current.setNext(node);
   }
 
+  /**
+   *
+   * @return
+   */
   public String toString(){
     Node current = this.head;
     if (current == null) {
