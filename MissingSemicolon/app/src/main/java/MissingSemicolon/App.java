@@ -14,6 +14,9 @@ public class App {
     readingFile("/home/mkabumattar/amman-code-java-401d2/java-fundamentals/MissingSemicolon/app/src/main/java/MissingSemicolon/gates.js");
   }
 
+  /**
+   * @param path
+   */
   public static void readingFile(String path) {
     Path file = Paths.get(path);
     try (InputStream in = Files.newInputStream(file);
@@ -28,7 +31,7 @@ public class App {
           codeReformat.append(textLine).append("\n");
         }
       }
-      System.out.println("\n\nCode after reformat \n\n"+codeReformat);
+      System.out.println("\n\nCode after reformat \n\n" + codeReformat);
     } catch (IOException err) {
       System.err.println(err);
     }
