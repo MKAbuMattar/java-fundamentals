@@ -18,13 +18,33 @@ public class AppTest {
     testRestaurant.addReview("trash","mohammad",5);
     testRestaurant.addReview("trash","Ali",3);
     testRestaurant.addReview("trash","mohammad",4);
-    assertEquals("Restaurant Name: McDonaldson | Stars: 4.0 | Category: {  Name: Big Mac | Price: 5.3 ||  Name: Chicken McNuggets | Price: 2.3 ||  Name: World Famous Fries | Price: 0.99 ||  } Review: { Author Name: mohammad | Comment: trash | Star: 5.0 || Author Name: Ali | Comment: trash | Star: 3.0 ||  }", testRestaurant.toString());
+    assertEquals("Restaurant Name: McDonaldson | Stars: 4.0 | Restaurant Category: $$$ | Menu: {  Name: Big Mac | Price: 5.3 ||  Name: Chicken McNuggets | Price: 2.3 ||  Name: World Famous Fries | Price: 0.99 ||  } Review: { Author Name: mohammad | Comment: good | Star: 5.0 || Author Name: Ali | Comment: trash | Star: 3.0 ||  }", testRestaurant.toString());
   }
 
   @Test public void testRestaurantChangeName(){
     Restaurant testRestaurant = new Restaurant("McDonaldson", "$$$");
     testRestaurant.setName("McDonaldson's");
     assertEquals("McDonaldson's",testRestaurant.getName());
+  }
+
+  @Test public void testShopToString(){
+    Shop  testShop = new Shop("MK","$$");
+
+    testShop.addReview("good","mohammad",5);
+    testShop.addReview("trash","Ali",3);
+    testShop.addReview("trash","mohammad",2);
+
+    assertEquals("Shop Name: MK | Stars: 4.0 | Shop Category: $$ | Review: { Author Name: mohammad | Comment: good | Star: 5.0 || Author Name: Ali | Comment: trash | Star: 3.0 ||  }", testShop.toString());
+  }
+
+  @Test public void testTheaterToString(){
+    Theater  testTheater = new Theater("MK");
+
+    testTheater.addReview("good","mohammad",5);
+    testTheater.addReview("trash","Ali",3);
+    testTheater.addReview("trash","mohammad",2);
+
+    assertEquals("Theater Name: MK | Stars: 4.0 | List of Movie: [] | Review: { Author Name: mohammad | Comment: good | Star: 5.0 || Author Name: Ali | Comment: trash | Star: 3.0 ||  }", testTheater.toString());
   }
 
 }

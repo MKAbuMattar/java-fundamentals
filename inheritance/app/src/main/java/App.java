@@ -19,12 +19,18 @@ public class App {
     McDonaldson.addReview("trash","Ali",4);
     McDonaldson.addReview("trash","mohammad",4);
 
+    System.out.println("Restaurant");
+    System.out.println(McDonaldson);
+
     Shop mk = new Shop("MK", "$$$$$$");
 
     mk.addReview("good","mohammad",5);
     mk.addReview("good","khaled",5);
     mk.addReview("nice","Ali",3);
     mk.addReview("good","khaled",5);
+
+    System.out.println("Shop");
+    System.out.println(mk);
 
     Theater newTheater = new Theater("MK Theater");
 
@@ -37,12 +43,6 @@ public class App {
     newTheater.addReview("good","khaled",5);
     newTheater.addReview("nice","Ali",3);
     newTheater.addReview("good","khaled",5);
-
-    System.out.println("Restaurant");
-    System.out.println(McDonaldson);
-
-    System.out.println("Shop");
-    System.out.println(mk);
 
     System.out.println("Theater");
     System.out.println(newTheater);
