@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class AppTest {
 
   @Test public void testRestaurantToString(){
-    Restaurant  testRestaurant = new Restaurant("McDonaldson");
+    Restaurant  testRestaurant = new Restaurant("McDonaldson", "$$$");
     testRestaurant.setCategory("Big Mac",5.3);
     testRestaurant.setCategory("Chicken McNuggets",2.3);
     testRestaurant.setCategory("World Famous Fries",.99);
@@ -22,7 +22,7 @@ public class AppTest {
   }
 
   @Test public void testRestaurantChangeName(){
-    Restaurant testRestaurant = new Restaurant("McDonaldson");
+    Restaurant testRestaurant = new Restaurant("McDonaldson", "$$$");
     testRestaurant.setName("McDonaldson's");
     assertEquals("McDonaldson's",testRestaurant.getName());
   }
